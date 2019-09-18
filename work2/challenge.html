@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自言自语</title>
+    <script>
+        function z(){
+            console.log("张三：" + document.getElementById("zhang").value)
+        }
+        function l(){
+            console.log("李四：" + document.getElementById("li").value)
+}
+    </script>
+</head>
+<body>
+<div>张三:</div>
+<input type="text" id="zhang" style="height:17px;width:300px;" /> 
+<input type="submit" value="发送" onclick="z()">
+<div>李四:</div>
+<input type="text" id="li" style="height:17px;width:300px;" />
+<input type="submit" value="发送" onclick="l()">
+</body>
+</html>
