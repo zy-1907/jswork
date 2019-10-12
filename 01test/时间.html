@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+     function toDou(n){
+                if(n<10){
+                    return '0'+n;
+                 }
+                 else{
+                     return ''+n;
+                 }
+                     }
+        
+        window.onload = function(){
+
+          setInterval(function(){
+            var oDate=new Date();
+            var str= toDou(oDate.getHours()) +":"+ toDou(oDate.getMinutes()) +":"+ toDou(oDate.getSeconds())
+            document.getElementById('sj').innerHTML=str;
+          },1000);
+          
+
+
+
+
+        }
+          
+    </script>  
+ 
+</head>
+<body>
+<h id="sj"></h>
+</body>
+</html>
