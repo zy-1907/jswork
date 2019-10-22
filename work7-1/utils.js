@@ -37,6 +37,7 @@ function insertSort(str) {
 }
 function showLog(logValues,showElement) {
     let str = ''
+    //解构赋值
     let {done,value:[row,pos]}=logValues.next()
     for(const key in row){
         let color = pos.indexOf(Number(key))>-1?'color:red;':''
