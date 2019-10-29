@@ -24,7 +24,8 @@ function monkey() {
 function stat(){
    let str = document.getElementById('str').value
    let obj = {}
-   let n = str.split("");
+   let n = str.split("").sort();
+   console.log(n)
    for(i=0;i<n.length;i++){
        key = n[i];
        if(obj[key]){
@@ -33,5 +34,6 @@ function stat(){
            obj[key]=1;
        }
    }
+   console.log(obj)
     document.getElementById('result').innerHTML = JSON.stringify(obj)
 }
