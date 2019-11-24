@@ -34,6 +34,6 @@ function stat(){
            obj[key]=1;
        }
    }
-   console.log(obj)
+    console.log(obj)
     document.getElementById('result').innerHTML = JSON.stringify(obj)
 }
