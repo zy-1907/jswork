@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+#d {
+    height: 64px;
+    width: 64px;
+    background-image: url(hj64x64.png);
+    position: absolute;
+}
+
+#d:hover {
+    background-image: url(yx64x64.png);
+    cursor: pointer;
+}
+
+body {
+    text-align: center;
+    background: url(background.jpg) no-repeat;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#g {
+    width: 50px;
+    height: 50px;
+    background: url("h.gif") no-repeat;
+    margin: 0 auto;
+}
+
+p {
+    font-weight: 900;
+    color: #FFD700;
+}
+
+a {
+    color: white;
+}
+
+#show {
+
+    POSITION: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 400px;
+    border: 1px solid #888;
+    margin-left: -300px;
+    margin-top: -200px;
+    background: url("show.jpg") no-repeat;
+    background-size: 100% 100%;
+
+}
