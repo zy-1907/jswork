@@ -16,17 +16,17 @@
             obj.page = (obj.page>=obj.maxPage)?obj.maxPage:(obj.page +1);
             obj.onChange()
         }
-        this.first.onclick = function () {
+        this.last.onclick = function () {
             obj.page = obj.maxPage;
             obj.onChange()
         }
     }
 
     Pagelist.prototype.updateStatus = function () {
-        this.first.disableed = (this.page <=1)
-        this.prev.disableed = (this.page <=1)
-        this.next.disableed = (this.page >= this.maxPage)
-        this.last.disableed = (this.page >= this.maxPage)
+        this.first.disabled = (this.page <=1)
+        this.prev.disabled = (this.page <=1)
+        this.next.disabled = (this.page >= this.maxPage)
+        this.last.disabled = (this.page >= this.maxPage)
         this.pageNum.innerHTML = this.page
     }
 
